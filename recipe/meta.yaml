@@ -1,10 +1,10 @@
 {% set name = "perl-tie-refhash" %}
-{% set version = "1.40" %}
-{% set sha256 = "5acf1f518d2fb5f620caad7a1b2ff1f6f7516fef8f40ba6b743eec8b96927ed7" %}
+{% set version = "1.41" %}
+{% set sha256 = "48143505b176665896ac4276167c2cabe94ddb59c59d81610444f1bd36843138" %}
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://cpan.metacpan.org/authors/id/E/ET/ETHER/Tie-RefHash-{{ version }}.tar.gz
@@ -37,10 +37,7 @@ about:
   license: GPL-1.0-or-later OR Artistic-1.0-Perl
   license_family: OTHER
   summary: 'use references as hash keys'
-  license_file:
-    - {{ environ["PREFIX"] }}/man/man1/perlartistic.1
-    - {{ environ["PREFIX"] }}/man/man1/perlgpl.1
-    - LICENCE
+  license_file: LICENCE
 
 extra:
   recipe-maintainers:
